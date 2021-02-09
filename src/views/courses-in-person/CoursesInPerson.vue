@@ -1,19 +1,6 @@
 <template>
   <v-app>
       <NavBar />
-          <v-carousel
-            cycle
-            height="400"
-            hide-delimiter-background
-            interval="3000"
-            show-arrows-on-hover>
-            <v-carousel-item src="./assets/img1.jpg"
-          ></v-carousel-item>
-           <v-carousel-item src="./assets/img2.jpg"
-          ></v-carousel-item>
-             <v-carousel-item src="./assets/img3.jpg"
-          ></v-carousel-item>
-          </v-carousel>
       <v-container>
           <h1>Cursos Presencias</h1>
           <v-container class="cards">
