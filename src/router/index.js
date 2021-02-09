@@ -6,6 +6,7 @@ import OnlineCourses from "../views/online-courses/OnlineCourses.vue"
 import CoursesInPerson from "../views/courses-in-person/CoursesInPerson.vue"
 import Contact from "../views/contact/Contact.vue"
 import Videos from "../views/videos/Videos.vue"
+import News from "../views/news/News.vue"
 import Thermos from "../components/Thermos.vue"
 import PrivacyPolicy from "../components/PrivacyPolicy.vue"
 
@@ -23,14 +24,19 @@ const routes = [
     component: About
   },
   {
+    path: "/cursos-presenciais",
+    name: "CoursesInPerson",
+    component: CoursesInPerson
+  },
+  {
     path: "/cursos-online",
     name: "Online-courses",
     component: OnlineCourses
   },
   {
-    path: "/cursos-presenciais",
-    name: "CoursesInPerson",
-    component: CoursesInPerson
+    path: "/fique-por-dentro",
+    name: "News",
+    component: News
   },
   {
     path: "/contato",

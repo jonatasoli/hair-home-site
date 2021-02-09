@@ -25,8 +25,9 @@ export default {
 <style scoped>
 h1 {
     text-align: center;
+    margin: 40px 0;
     color: #FFB74D;
-    font-size: 55px;
+    font-size: 36px;
 }
 .videos {
     display: flex;

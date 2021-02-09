@@ -21,7 +21,7 @@
         <span>|</span>
         <v-btn color="#18121E" elevation="0" @click="goOnlineCourses">CURSOS ONLINE</v-btn>
         <span>|</span>
-        <v-btn color="#18121E" elevation="0">FIQUE POR DENTRO</v-btn><span>|</span>
+        <v-btn color="#18121E" elevation="0" @click="goNews">FIQUE POR DENTRO</v-btn><span>|</span>
         <v-btn color="#18121E" elevation="0" @click="goVideos">VIDEOS</v-btn><span>|</span>
         <v-btn color="#18121E" elevation="0" @click="goAbout">
           QUEM SOMOS
@@ -66,6 +66,11 @@ export default {
     goCoursesInPerson() {
       this.$router.push({
         name: 'CoursesInPerson'
+      })
+    },
+    goNews() {
+      this.$router.push({
+        name: 'News'
       })
     }
   }

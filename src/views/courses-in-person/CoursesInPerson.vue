@@ -5,20 +5,14 @@
             cycle
             height="400"
             hide-delimiter-background
+            interval="3000"
             show-arrows-on-hover>
             <v-carousel-item src="./assets/img1.jpg"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
           ></v-carousel-item>
            <v-carousel-item src="./assets/img2.jpg"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
           ></v-carousel-item>
              <v-carousel-item src="./assets/img3.jpg"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
           ></v-carousel-item>
-
           </v-carousel>
       <v-container>
           <h1>Cursos Presencias</h1>
@@ -89,7 +83,7 @@ h1 {
     text-align: center;
     margin: 40px 0;
     color: #FFB74D;
-    font-size: 55px;
+    font-size: 36px;
 }
 .cards {
     display: flex;
