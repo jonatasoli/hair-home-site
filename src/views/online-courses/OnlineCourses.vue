@@ -4,7 +4,7 @@
       <h1>Cursos Online</h1>
       <v-container class="cards">
           <v-card
-          class="mx-auto"
+          class="mx-auto card"
           max-width="344">
               <v-img
               src="./assets/penteados-trancas.jpg"
@@ -22,7 +22,7 @@
             </v-card-actions>
         </v-card>
         <v-card
-          class="mx-auto"
+          class="mx-auto card"
           max-width="344">
               <v-img
               src="./assets/colorimetria-capilar.jpg"
@@ -40,7 +40,7 @@
             </v-card-actions>
         </v-card>
         <v-card
-          class="mx-auto"
+          class="mx-auto card"
           max-width="344">
               <v-img
               src="./assets/desing-sobrancelhas.jpg"
@@ -81,5 +81,13 @@ h1 {
     display: flex;
     margin-bottom: 40px;
     
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: block;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
 }
 </style>

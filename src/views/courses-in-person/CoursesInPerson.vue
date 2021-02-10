@@ -4,7 +4,7 @@
       <v-container>
           <h1>Cursos Presencias</h1>
           <v-container class="cards">
-              <v-card class="mx-auto" max-width="344">
+              <v-card class="mx-auto card" max-width="344">
                   <v-card-text>
                       <p class=" display-1 text--primary">07/02/2021</p>
                         <p class="display-1 text--primary">
@@ -16,7 +16,7 @@
                         </div>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto" max-width="344">
+               <v-card class="mx-auto card" max-width="344">
                   <v-card-text>
                       <p class=" display-1 text--primary">10/03/2021</p>
                         <p class="display-1 text--primary">
@@ -28,7 +28,7 @@
                         </div>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto" max-width="344">
+               <v-card class="mx-auto card" max-width="344">
                   <v-card-text>
                       <p class=" display-1 text--primary">21/03/2021</p>
                         <p class="display-1 text--primary">
@@ -83,5 +83,13 @@ h1 {
     font-size: 18px;
     background-color:#202020;
     margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: block;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
 }
 </style>

@@ -22,7 +22,7 @@
             beleza, trazendo conhecimento de forma objetiva e clara.</p>
     </v-container>
     <v-container class="cards">
-      <v-card class="mx-auto" width="244">
+      <v-card class="mx-auto card" width="244">
       <v-img
       class="img"
       src="./assets/alvo.png"
@@ -58,7 +58,7 @@
          </div>
         </v-expand-transition>
       </v-card>
-        <v-card class="mx-auto" width="244">
+        <v-card class="mx-auto card" width="244">
            <v-img class="img"
       src="./assets/visao.png"
       max-width="130"
@@ -84,7 +84,7 @@
          </div>
         </v-expand-transition>
       </v-card>
-        <v-card class="mx-auto" width="244">
+        <v-card class="mx-auto card" width="244">
            <v-img
       class="img"
       src="./assets/valor.png"
@@ -157,5 +157,13 @@ p {
 .img {
   background-size: cover;
   margin: 10px auto;
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: block;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
 }
 </style>

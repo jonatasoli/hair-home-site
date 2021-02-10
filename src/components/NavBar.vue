@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-app-bar id="home-app-bar" app elevation="1" color="#18121E" height="80">
+  <div >
+    <v-app-bar class="navbar"  app elevation="1" color="#18121E" height="80">
       <v-img
         src="@/assets/logo.png"
         class="mx-3 hidden-xs-only"
@@ -14,21 +14,22 @@
         max-width="80"
         contain
       />
-      <v-toolbar-items class="toolbar">
-        <v-btn color="#18121E" elevation="0" @click="goHome">INICIO</v-btn>
-        <span>|</span>
-        <v-btn color="#18121E" elevation="0" @click="goCoursesInPerson">CURSOS PRESENCIAIS</v-btn>
-        <span>|</span>
-        <v-btn color="#18121E" elevation="0" @click="goOnlineCourses">CURSOS ONLINE</v-btn>
-        <span>|</span>
-        <v-btn color="#18121E" elevation="0" @click="goNews">FIQUE POR DENTRO</v-btn><span>|</span>
-        <v-btn color="#18121E" elevation="0" @click="goVideos">VIDEOS</v-btn><span>|</span>
-        <v-btn color="#18121E" elevation="0" @click="goAbout">
-          QUEM SOMOS
-        </v-btn><span>|</span>
-         <v-btn color="#18121E" elevation="0" @click="goContact">
-          CONTATO
-        </v-btn>
+      <v-spacer></v-spacer>
+
+        <v-menu offset-y v-if="$vuetify.breakpoint.xsOnly">
+          <template v-slot:activator="{ attrs, on }"> 
+            <v-btn v-bind="attrs" v-on="on"><v-icon>mdi-menu</v-icon></v-btn>
+          </template>
+          <v-list>
+            <v-list-item v-for="item in itens" :key="item" link @click="item.to">
+              <v-list-item-title>{{item.title}}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+      <v-toolbar-items class="toolbar" v-for="item in itens" :key="item" v-else>
+        <v-btn color="#18121E" elevation="0" @click="item.to">{{item.title}}</v-btn>
+        
       </v-toolbar-items>
     </v-app-bar>
   </div>
@@ -37,6 +38,20 @@
 <script>
 export default {
   name: "MainNavBar",
+   data() {
+    return {
+      itens: [
+        {title: "INICIO", to:this.goHome},
+        {title: "CURSOS PRESENCIAIS", to:this.goCoursesInPerson},
+        {title: "CURSOS ONLINE", to:this.goOnlineCourses},
+        {title: "FIQUE POR DENTRO", to:this.goNews},
+        {title: "VIDEOS", to:this.goVideos},
+        {title: "QUEM SOMOS", to:this.goAbout},
+        {title: "CONTATO", to:this.goContact}
+      ]
+    }
+  },    
+  
   methods: {
     goAbout() {
         this.$router.push({
@@ -77,7 +92,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped> 
+<style  scoped> 
 .has-margin-top-1 {
     margin-top: 1.5rem
 }
@@ -91,8 +106,5 @@ span {
     align-items: center;
 }
 
-.toolbar {
-  margin-right:100px;
-}
 
 </style>
