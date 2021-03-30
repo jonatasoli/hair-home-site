@@ -16,56 +16,85 @@
       de Beleza do Mundo</h1>
   <v-container class="cards">
       <v-card class="mx-auto card" max-width="344">
-                  <v-card-text>
-                        <p class="display-1 text--primary">
-                            Overdose Color Plus
-                        </p>
-                        <div>Curso de Aperfeiçoamento em Colorimetria</div>
-                        <div>Inclui: Certificado e Apostila</div>
-                  </v-card-text>
-                  <v-btn
-                    color="orange lighten-2"
-                    text
-                    href="https://hairschool.graciellegatto.com.br/curso-presencial-overdose-color-plus"
-                    target="_blank"
-                    >
-                    Saiba Mais
-                  </v-btn>
-              </v-card>
-              <v-card class="mx-auto card" max-width="344">
-                  <v-card-text>
-                        <p class="display-1 text--primary">
-                            Summertec
-                        </p>
-                        <div>Congresso Cíentifico</div>
-                        <div>Inclui: Certificado e Hospedagem</div>
-                  </v-card-text>
-                  <v-btn
-                    color="orange lighten-2"
-                    text
-                    href="https://hairschool.graciellegatto.com.br/congresso-cientifico-summertec"
-                    target="_blank"
-                    >
-                    Saiba Mais
-                  </v-btn>
-              </v-card>
-              <v-card class="mx-auto card" max-width="344">
-                  <v-card-text>
-                        <p class="display-1 text--primary">
-                            Blond Extreme
-                        </p>
-                        <div>Curso de Aperfeiçoamento em Louros</div>
-                        <div>Inclui: Certificado e Apostila</div>
-                  </v-card-text>
-                  <v-btn
-                    color="orange lighten-2"
-                    text
-                    href="https://hairschool.graciellegatto.com.br/curso-presencial-blond-extreme"
-                    target="_blank"
-                    >
-                    Saiba Mais
-                  </v-btn>
-              </v-card>
+        <v-img
+          src="./assets/overdose-color.jpeg"
+          height="350">
+        </v-img>
+        <v-card-actions>
+          <v-btn
+            color="orange lighten-2"
+            text
+            href="/overdose-color"
+            target="_blank"
+          >
+          Saiba Mais
+          </v-btn>
+        </v-card-actions>
+        </v-card>
+        <v-card class="mx-auto card" max-width="344">
+          <v-img
+          src="./assets/blond-extreme.jpeg"
+          height="350">
+        </v-img>
+        <v-card-actions>
+          <v-btn
+            color="orange lighten-2"
+            text
+            href="/blond-extreme"
+            target="_blank"
+            >
+            Saiba Mais
+          </v-btn>
+        </v-card-actions>
+        </v-card>
+        <v-card class="mx-auto card" max-width="344">
+          <v-img
+          src="./assets/summertec.jpeg"
+          height="350">
+          </v-img>
+          <v-card-actions>
+            <v-btn
+              color="orange lighten-2"
+              text
+              href="/congresso-cientifico-summertec"
+              target="_blank"
+              >
+              Saiba Mais
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card class="mx-auto card" max-width="344">
+          <v-img
+          src="./assets/corte-az.jpeg"
+          height="350">
+          </v-img>
+          <v-card-actions>
+            <v-btn
+              color="orange lighten-2"
+              text
+              href="/corte-de-a-z"
+              target="_blank"
+              >
+              Saiba Mais
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card class="mx-auto card" max-width="344">
+          <v-img
+          src="./assets/formacao-tecnicos.jpeg"
+          height="350">
+          </v-img>
+          <v-card-actions>
+            <v-btn
+              color="orange lighten-2"
+              text
+              href="/formacao-tecnicos"
+              target="_blank"
+              >
+              Saiba Mais
+            </v-btn>
+          </v-card-actions>
+        </v-card>
   </v-container>
     <Footer />
   </v-app>
@@ -90,6 +119,11 @@ h1 {
 .cards {
     display: flex;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
 }
 
 @media only screen and (max-width: 600px) {

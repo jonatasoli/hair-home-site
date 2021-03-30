@@ -1,6 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/home/Home.vue";
+import Summertec from "../views/forms/Summertec.vue"
+import OverdoseColor from "../views/forms/OverdoseColor.vue";
+import BlondExtreme from "../views/forms/BlondExtreme.vue";
+import CorteAZ from "../views/forms/CorteAZ.vue";
+import FormacaoTec from "../views/forms/FormacaoTec.vue";
 import About from "../views/about/About.vue";
 import OnlineCourses from "../views/online-courses/OnlineCourses.vue"
 import CoursesInPerson from "../views/courses-in-person/CoursesInPerson.vue"
@@ -57,6 +62,31 @@ const routes = [
     path: "/videos",
     name: "Videos",
     component: Videos
+  },
+  {
+    path: "/congresso-cientifico-summertec",
+    name: "Summertec",
+    component: Summertec
+  },
+  {
+    path: "/overdose-color",
+    name: "Overdose",
+    component: OverdoseColor
+  },
+  {
+    path: "/blond-extreme",
+    name: "BlondExtreme",
+    component: BlondExtreme
+  },
+  {
+    path: "/corte-de-a-z",
+    name: "CorteAZ",
+    component: CorteAZ
+  },
+  {
+    path: "/formacao-tecnicos",
+    name: "FormacaoTec",
+    component: FormacaoTec
   }
 ];
 
