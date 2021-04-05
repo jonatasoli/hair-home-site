@@ -44,7 +44,7 @@ const routes = [
     component: News
   },
   {
-    path: "/contato",
+    path: "/fale-conosco",
     name: "Contact",
     component: Contact
   },
