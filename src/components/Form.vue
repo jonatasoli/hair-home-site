@@ -119,12 +119,13 @@ export default {
   methods: {
     ...mapActions(["postMail"]),
     validate () {
-      this.$refs.form.validate()
-      this.form.phone = this.countryCode + this.form.phone
-      this.form.course = this.curso
-      console.log(this.form)
-      this.postMail(this.form)
-      window.alert("Obrigada! Entraremos em contato em breve!")
+      if (this.$refs.form.validate()) {
+        this.form.phone = this.countryCode + this.form.phone
+        this.form.course = this.curso
+        console.log(this.form)
+        this.postMail(this.form)
+        window.alert("Obrigada! Entraremos em contato em breve!")
+      }
     },
     onSelect({dialCode}) {
     return this.countryCode = `+${dialCode}`;
