@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-content>
+    <v-main>
        <cookie-law theme="dark-lime">
   <div slot-scope="props">
     <p>
@@ -12,7 +12,7 @@
  
 </cookie-law>
       <router-view />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 

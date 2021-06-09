@@ -21,13 +21,13 @@
             <v-btn v-bind="attrs" v-on="on"><v-icon>mdi-menu</v-icon></v-btn>
           </template>
           <v-list>
-            <v-list-item v-for="item in itens" :key="item" link @click="item.to">
+            <v-list-item v-for="(item, index) in itens" :key="index" link @click="item.to">
               <v-list-item-title>{{item.title}}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
 
-      <v-toolbar-items class="toolbar" v-for="item in itens" :key="item" v-else>
+      <v-toolbar-items class="toolbar" v-for="(item, index) in itens" :key="index" v-else>
         <v-btn color="#18121E" elevation="0" @click="item.to">{{item.title}}</v-btn>
         
       </v-toolbar-items>
