@@ -3,43 +3,99 @@
       <NavBar />
       <v-container>
           <h1>Cursos Presencias</h1>
+          <h2>Brasil</h2>
           <v-container class="cards">
-              <v-card class="mx-auto card" max-width="344">
+            <v-col>
+             <v-row>
+              <v-card class="mx-auto  card" width="274">
                   <v-card-text>
-                      <p class=" display-1 text--primary">07/02/2021</p>
+                      <p class=" display-1 text--primary">29 e 30/07</p>
                         <p class="display-1 text--primary">
-                            Pós Latin Science
-                        </p>
-                        <p>6 dias</p>
-                        <div class="text--primary">
-                          Buenos Aires - Argentina
-                        </div>
+                            Corte de A-Z
+                        </p>     
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto card" max-width="344">
+               <v-card class="mx-auto  card" width="274">
                   <v-card-text>
-                      <p class=" display-1 text--primary">10/03/2021</p>
+                      <p class=" display-1 text--primary">01-02 e 03/08</p>
                         <p class="display-1 text--primary">
-                            Intercâmbio de Corte
+                            Master Training
                         </p>
-                        <p>10 dias</p>
-                        <div class="text--primary">
-                          Lisboa - Portugal
-                        </div>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto card" max-width="344">
+               <v-card class="mx-auto  card" width="274">
                   <v-card-text>
-                      <p class=" display-1 text--primary">21/03/2021</p>
+                      <p class=" display-1 text--primary">23 e 24/08</p>
                         <p class="display-1 text--primary">
-                            Intercâmbio mentoria.
+                            Blond Extreme
                         </p>
-                        <p>6 dias</p>
-                        <div class="text--primary">
-                          Espanha
-                        </div>
                   </v-card-text>
               </v-card>
+              </v-row>
+              <v-row class="mt-12">
+              <v-card class="mx-auto  card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">29/08 e 03/09</p>
+                        <p class="display-1 text--primary">
+                            Formação de Técnicos
+                        </p>
+                  </v-card-text>
+              </v-card>
+              <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">20 a 23/09</p>
+                        <p class="display-1 text--primary">
+                            Overdose Color
+                        </p>
+                  </v-card-text>
+              </v-card>
+              <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">26/09 a 01/10</p>
+                        <p class="display-1 text--primary">
+                            SUMMERTEC
+                        </p>
+                  </v-card-text>
+              </v-card>
+              </v-row>
+               <h2>Portugal</h2>
+               <v-row>
+                  <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">27 a 28/06</p>
+                        <p class="display-1 text--primary">
+                            Overdose Color
+                        </p>
+                  </v-card-text>
+              </v-card>
+               <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">29 e 30/06</p>
+                        <p class="display-1 text--primary">
+                            Lisos e Ondulantes
+                        </p>
+                  </v-card-text>
+              </v-card>
+               <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">24-26/10</p>
+                        <p class="display-1 text--primary">
+                            Master Training
+                        </p>
+                  </v-card-text>
+              </v-card>
+               </v-row>
+              <v-row class="mt-12">
+                 <v-card class="mx-auto card" width="274">
+                  <v-card-text>
+                      <p class=" display-1 text--primary">27 e 28/10</p>
+                        <p class="display-1 text--primary">
+                            Blond Extreme
+                        </p>
+                  </v-card-text>
+              </v-card>
+              </v-row>
+              </v-col>
           </v-container>
           <v-container class="v-btn">
           <v-btn
@@ -72,6 +128,13 @@ h1 {
     color: #FFB74D;
     font-size: 36px;
 }
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    color: #FFB74D;
+    font-size: 28px;
+}
+
 .cards {
     display: flex;
     margin-bottom: 20px;

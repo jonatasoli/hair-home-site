@@ -8,9 +8,9 @@
           href="mailto:relacionamento@graciellegatto.com.br ">
           <v-icon left>mdi-email</v-icon> 
           Fale Conosco</v-btn>
-          <a href="https://www.instagram.com/gracielle_gatto/" target="_blank"
+          <a href="https://www.instagram.com/hairschoolinternational/" target="_blank"
           ><v-img width="50" height="50" class="mx-5" src="./assets/instagram.png"></v-img></a>
-          <a href="https://www.youtube.com/channel/UCe4Jy3F5L0uUXU_xYS3VteQ" target="_blank"
+          <a href="https://www.youtube.com/channel/UCJHoHBMhyrRXX_k7_leUfxQ" target="_blank"
           ><v-img width="50" height="50" class="mx-5" src="./assets/youtube.png"></v-img></a>
       </v-container>
       <v-container class="maps">
