@@ -7,19 +7,30 @@
     </div>
     <v-container>
        <h1>Gracielle Gatto</h1>
+       <div class="box-biografy">
+       <div class="img">
+         <v-img src="./assets/Gracielle.jpeg"  
+          max-width="440"
+          max-height="580"></v-img>
+       </div>
+       <div class="biografy">
         <p>    CEO na Empresa Hair School Internacional, 
            a renomada Hair Stylist internacional, atua no mercado 
            da beleza há mais de 20 anos. Com vasta experiência, já 
            ministrou cursos na América do Sul , Europa e África.</p>
-        <p>     Tem formação em mais de 70 cursos nacionais e 
-            internacionais em academias de referência como: Pivot 
-            Point, Vidal Sasson , Tony Guy entre outras.</p>
-        <p>     A Empresa Hair School Internacional, está entre 
-            as 10 melhores academias do Brasil.</p>
+        <p>     Tem formação em mais de 70 cursos nacionais e internacionais. 
+          Seu método de ensino tem transformado a carreira de centenas de profissionais 
+          ano após ano
+        </p>
+        <p>     A Empresa Hair School Internacional, é hoje a MAIOR e MELHOR academia 
+          de beleza ciêntifica do mundo!</p>
         <p>    Com mais de 100 mil alunos participantes entre 
             cursos profissionalizantes e especializações, surge 
             no mercado como uma academia facilitadora no setor da 
             beleza, trazendo conhecimento de forma objetiva e clara.</p>
+       </div>
+
+       </div>
     </v-container>
     <v-container class="cards">
       <v-card class="mx-auto card" width="244">
@@ -142,12 +153,6 @@ h1 {
     text-align: center;
     margin: 20px 10px;
 }
-p {
-    font-size: 20px;
-    text-align: justify;
-    text-indent: 25px;
-    font-family: 'Syne', sans-serif
-}
 .cards {
   display: flex;
   align-items: center;
@@ -157,6 +162,22 @@ p {
 .img {
   background-size: cover;
   margin: 10px auto;
+}
+.biografy {
+  width: 55%
+}
+.biografy p {
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 25px;
+    font-family: 'Syne', sans-serif
+}
+
+.box-biografy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap
 }
 @media only screen and (max-width: 600px) {
   .cards {
