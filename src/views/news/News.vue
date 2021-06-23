@@ -1,109 +1,168 @@
 <template>
   <v-app>
-      <NavBar />
-      <v-container>
-          <h1>O QUE DIZEM SOBRE NÓS</h1>
-      </v-container>
+    <NavBar />
+    <v-container>
+      <h1>O QUE DIZEM SOBRE NÓS</h1>
+    </v-container>
+    <v-carousel class="carousel" height="440">
+      <v-carousel-item v-for="video in videos" :key="video.ref">
+        <v-sheet color="black" height="100%">
+          <iframe
+            class="iframe-youtube"
+            width="900"
+            height="415"
+            :src="video.src"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+
     <v-carousel
-    class="carousel"
-    cycle
-    continuous
-    interval="4000"
-    height="400"
-    hide-delimiter-background
-    show-arrows-on-hover
-  >
-    <v-carousel-item
-      v-for="(slide, i) in items"
-      :key="i"
+      class="carousel"
+      cycle
+      continuous
+      interval="4000"
+      height="400"
+      hide-delimiter-background
+      show-arrows-on-hover
     >
-      <v-sheet
-        :color="colors[i]"
-        height="100%"
-      >
-        <v-row
-         class="fill-height"
-          align="center"
-          justify="center"
-        >
-          <div class="item">
-            {{ slide.slides }}
-          </div>
-          <p class="aluno">
-              {{slide.aluno}}
-          </p>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
-      <Footer />
+      <v-carousel-item v-for="(slide, i) in items" :key="i">
+        <v-sheet :color="colors[i]" height="100%">
+          <v-row class="fill-height" align="center" justify="center">
+            <div class="item">
+              {{ slide.slides }}
+            </div>
+            <p class="aluno">
+              {{ slide.aluno }}
+            </p>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
-import Footer from "@/components/Footer.vue"
+import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
-    components: { NavBar, Footer},
-    data () {
+  components: { NavBar, Footer },
+  data() {
     return {
-    colors: [
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
-    ],
-    items: [
+      colors: ["warning", "pink darken-2", "red lighten-1", "deep-purple accent-4"],
+      items: [
         {
-            slides: '​Vocês são Top, Parabéns a todos vocês, que Deus continue abençoando a todos vocês!',
-            aluno: 'Micheline Carvalho, Aluna'
+          slides:
+            "​Vocês são Top, Parabéns a todos vocês, que Deus continue abençoando a todos vocês!",
+          aluno: "Micheline Carvalho, Aluna",
         },
         {
-            slides: 'A melhor academia com os melhores profissionais. Cada curso um aprendizado novo, e cada vez fico  mais encantado. Que venha novos cursos!',
-            aluno: 'Carlos Eduardo, Aluno'
+          slides:
+            "A melhor academia com os melhores profissionais. Cada curso um aprendizado novo, e cada vez fico  mais encantado. Que venha novos cursos!",
+          aluno: "Carlos Eduardo, Aluno",
         },
         {
-            slides: 'Gracielle Gatto você foi essencial e a Hair School um divisor de águas na minha vida!',
-            aluno: 'Leisliane Rodrigues, Aluna'
+          slides:
+            "Gracielle Gatto você foi essencial e a Hair School um divisor de águas na minha vida!",
+          aluno: "Leisliane Rodrigues, Aluna",
         },
         {
-            slides: 'Onde você passa, você brilha, parabéns pelo seu sucesso tenho muito orgulho de ter conhecido e participado do Circuito com a família Hair School, PARABÉNS sucesso sempre, bjs.',
-            aluno: 'Beatriz Maia, Aluna'
-        }
-    ]
-    }
-    }
-   
-}
+          slides:
+            "Onde você passa, você brilha, parabéns pelo seu sucesso tenho muito orgulho de ter conhecido e participado do Circuito com a família Hair School, PARABÉNS sucesso sempre, bjs.",
+          aluno: "Beatriz Maia, Aluna",
+        },
+      ],
+    };
+  },
+  computed: {
+    videos() {
+      return [
+        {
+          src: "https://www.youtube.com/embed/RBGK6aQ6NSk?rel=1&modestbranding=0&autohide=0&mute=0&showinfo=0&autoplay=0",
+          ref: "video0",
+        },
+        {
+          src: "https://www.youtube.com/embed/2Zd-qmgtzrQ?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video1",
+        },
+        {
+          src: "https://www.youtube.com/embed/AFVDsb2GV7k?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video2",
+        },
+        {
+          src: "https://www.youtube.com/embed/_YGZwOZl024?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video3",
+        },
+        {
+          src: "https://www.youtube.com/embed/F9GeOp6rARo?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video4",
+        },
+        {
+          src: "https://www.youtube.com/embed/u2KYjXgR1K4?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video5",
+        },
+        {
+          src: "https://www.youtube.com/embed/u-XMUVkDSTY?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video6",
+        },
+        {
+          src: "https://www.youtube.com/embed/FJCX25UNVes?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video7",
+        },
+        {
+          src: "https://www.youtube.com/embed/L8t4ENZTH_o?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
+          ref: "video8",
+        },
+      ];
+    },
+  },
+  methods: {
+    onClick({ ref }) {
+      // Loop over all videos
+      this.videos.forEach((video) => {
+        // Get the DOM element for this video
+        const $video = this.$refs[video.ref][0];
+        // Play the video that the user clicked
+        if (video.ref === ref) $video.play();
+        // Pause all other videos
+        else $video.pause();
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 h1 {
-    text-align: center;
-    margin: 40px 0;
-    color: #FFB74D;
-    font-size: 36px;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffb74d;
+  font-size: 36px;
 }
 .item {
-    font-size: 20px;
-    width: 900px;
-    text-align: center;    
-    
+  font-size: 20px;
+  width: 900px;
+  text-align: center;
 }
 .aluno {
-    font-size:20px;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 20px;
-    
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 20px;
 }
 .fill-height {
-    flex-direction: column;
-
+  flex-direction: column;
 }
 .carousel {
   margin-bottom: 40px;
 }
 
-
+.iframe-youtube {
+  display: flex;
+  margin: 0 auto;
+}
 </style>

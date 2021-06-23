@@ -7,7 +7,7 @@
           width="660" 
           height="415" 
           src="https://www.youtube.com/embed/videoseries?list=UUe4Jy3F5L0uUXU_xYS3VteQ" 
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          frameborder="0" allow="autoplay=1; encrypted-media" allowfullscreen></iframe>
       </v-container>
       <Footer />
   </v-app>
