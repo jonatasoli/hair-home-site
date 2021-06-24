@@ -53,7 +53,7 @@ export default {
   components: { NavBar, Footer },
   data() {
     return {
-      colors: ["warning", "pink darken-2", "red lighten-1", "deep-purple accent-4"],
+      colors: ["#D99938", "#9C8E83","#D99938","#9C8E83" ],
       items: [
         {
           slides:
@@ -148,11 +148,13 @@ h1 {
   font-size: 20px;
   width: 900px;
   text-align: center;
+  color: black;
 }
 .aluno {
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Dancing Script", cursive;
   margin-top: 20px;
+  color: black
 }
 .fill-height {
   flex-direction: column;

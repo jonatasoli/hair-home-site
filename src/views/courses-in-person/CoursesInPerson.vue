@@ -24,6 +24,9 @@
                         <p class="display-1 text--primary">
                             Master Training
                         </p>
+                        <p class="sold-out">
+                            VAGAS ESGOTADAS
+                        </p>
                   </v-card-text>
               </v-card>
                <v-card class="mx-auto  card" width="274" color="#D8BC98">
@@ -43,6 +46,9 @@
                       <p class=" display-1 text--primary">29/08 e 03/09</p>
                         <p class="display-1 text--primary">
                             Formação de Técnicos
+                        </p>
+                        <p class="sold-out">
+                            VAGAS ESGOTADAS
                         </p>
                   </v-card-text>
               </v-card>
@@ -157,6 +163,12 @@ h2 {
     font-size: 18px;
     background-color:#202020;
     margin-bottom: 30px;
+}
+
+.sold-out {
+    color: red;
+    font-size: 20px;
+    font-weight: bold
 }
 @media only screen and (max-width: 600px) {
   .cards {
