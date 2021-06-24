@@ -1,30 +1,59 @@
 <template>
   <v-app>
     <NavBar />
-    <v-carousel
+    <div v-if="$vuetify.breakpoint.xlOnly">
+      <v-carousel
       class="carousel"
       cycle
-      height="420"
+      height="600"
       hide-delimiter-background
       interval="4000"
       show-arrows-on-hover
     >
       <v-carousel-item
-        ><v-img class="img" height="420" src="./assets/1.png"></v-img
+        class="img"><v-img height="600" width="100%" src="./assets/1.png"></v-img
       ></v-carousel-item>
       <v-carousel-item
-        ><v-img class="img" height="420" src="./assets/2.png"></v-img
+        ><v-img class="img" height="600" width="100%" src="./assets/2.png"></v-img
       ></v-carousel-item>
       <v-carousel-item
-        ><v-img class="img" height="420" src="./assets/3.png"></v-img
+        ><v-img class="img" height="600" width="100%" src="./assets/3.png"></v-img
       ></v-carousel-item>
        <v-carousel-item
-        ><v-img class="img" height="420" src="./assets/4.png"></v-img
+        ><v-img class="img" height="600" width="100%" src="./assets/4.png"></v-img
       ></v-carousel-item>
        <v-carousel-item
-        ><v-img class="img" height="420" src="./assets/5.png"></v-img
+        ><v-img class="img" height="600" width="100%" src="./assets/5.png"></v-img
       ></v-carousel-item>
     </v-carousel>
+    </div>
+    <div v-else>
+    <v-carousel
+      class="carousel"
+      cycle
+      height="430"
+      hide-delimiter-background
+      interval="4000"
+      show-arrows-on-hover
+    >
+      <v-carousel-item
+        class="img"><v-img height="430" width="100%" src="./assets/1.png"></v-img
+      ></v-carousel-item>
+      <v-carousel-item
+        ><v-img class="img" height="430" width="100%" src="./assets/2.png"></v-img
+      ></v-carousel-item>
+      <v-carousel-item
+        ><v-img class="img" height="430" width="100%" src="./assets/3.png"></v-img
+      ></v-carousel-item>
+       <v-carousel-item
+        ><v-img class="img" height="430" width="100%" src="./assets/4.png"></v-img
+      ></v-carousel-item>
+       <v-carousel-item
+        ><v-img class="img" height="430" width="100%" src="./assets/5.png"></v-img
+      ></v-carousel-item>
+    </v-carousel>
+
+    </div>
     <h1>Conheça a Maior e Melhor Academia Científica de Beleza do Mundo</h1>
     <v-container class="cards">
       <v-card class="mx-auto card" max-width="344" color="#D8BC98">
@@ -138,7 +167,9 @@ h1 {
   }
   .img {
     height: 430px !important;
+   
   }
+
   
 
   >>>.v-btn__content {
