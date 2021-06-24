@@ -101,10 +101,7 @@ export default {
           src: "https://www.youtube.com/embed/F9GeOp6rARo?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
           ref: "video4",
         },
-        {
-          src: "https://www.youtube.com/embed/u2KYjXgR1K4?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
-          ref: "video5",
-        },
+        
         {
           src: "https://www.youtube.com/embed/u-XMUVkDSTY?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&autoplay=0",
           ref: "video6",
