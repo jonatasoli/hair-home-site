@@ -21,27 +21,26 @@
     </v-carousel>
     <h1>Conheça a Maior e Melhor Academia Científica de Beleza do Mundo</h1>
     <v-container class="cards">
-      <v-card class="mx-auto card" max-width="344">
+      <v-card class="mx-auto card" max-width="344" color="#D8BC98">
         <v-img src="./assets/overdose-color.jpeg" height="350"> </v-img>
         <v-card-actions>
-          <v-btn color="orange lighten-2" text href="/overdose-color" target="_blank">
+          <v-btn  text href="/overdose-color" target="_blank">
             Saiba Mais
           </v-btn>
         </v-card-actions>
       </v-card>
-      <v-card class="mx-auto card" max-width="344">
+      <v-card class="mx-auto card" max-width="344" color="#D8BC98">
         <v-img src="./assets/blond-extreme.jpeg" height="350"> </v-img>
         <v-card-actions>
-          <v-btn color="orange lighten-2" text href="/blond-extreme" target="_blank">
+          <v-btn  text href="/blond-extreme" target="_blank">
             Saiba Mais
           </v-btn>
         </v-card-actions>
       </v-card>
-      <v-card class="mx-auto card" max-width="344">
+      <v-card class="mx-auto card" max-width="344" color="#D8BC98">
         <v-img src="./assets/summertec.jpeg" height="350"> </v-img>
         <v-card-actions>
           <v-btn
-            color="orange lighten-2"
             text
             href="/congresso-cientifico-summertec"
             target="_blank"
@@ -50,18 +49,18 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-      <v-card class="mx-auto card" max-width="344">
+      <v-card class="mx-auto card" max-width="344" color="#D8BC98">
         <v-img src="./assets/corte-az.jpeg" height="350"> </v-img>
         <v-card-actions>
-          <v-btn color="orange lighten-2" text href="/corte-de-a-z" target="_blank">
+          <v-btn text href="/corte-de-a-z" target="_blank">
             Saiba Mais
           </v-btn>
         </v-card-actions>
       </v-card>
-      <v-card class="mx-auto card" max-width="344">
+      <v-card class="mx-auto card" max-width="344" color="#D8BC98">
         <v-img src="./assets/formacao-tecnicos.jpeg" height="350"> </v-img>
         <v-card-actions>
-          <v-btn color="orange lighten-2" text href="/formacao-tecnicos" target="_blank">
+          <v-btn text href="/formacao-tecnicos" target="_blank">
             Saiba Mais
           </v-btn>
         </v-card-actions>
@@ -96,7 +95,7 @@ export default {
 h1 {
   text-align: center;
   margin: 40px 0;
-  color: #ffb74d;
+  color: #D99938;
   font-size: 36px;
 }
 .cards {
@@ -111,7 +110,7 @@ h1 {
 .title-gatto-rosa {
   word-wrap: break-word;
   font-size: 40px;
-  color: #ffb74d;
+  color: #D99938;
   position: relative;
   top: 60%;
   left: 52%;

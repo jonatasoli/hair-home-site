@@ -12,7 +12,8 @@
         v-model="form.name"
         filled
         rounded
-        dense
+        outlined
+        
         required>
         </v-text-field>
         <v-text-field
@@ -21,7 +22,7 @@
         v-model="form.email"
          filled
         rounded
-        dense
+        outlined
         required>
         </v-text-field>
           <div class="phone">
@@ -36,7 +37,7 @@
             readonly
             filled
             rounded
-            dense></v-text-field>
+            outlined></v-text-field>
 
             </v-col>
             <v-text-field
@@ -45,7 +46,7 @@
             :rules="phoneRules"
             filled
             rounded
-            dense
+            outlined
             required>
           </v-text-field>
           </div>
@@ -54,7 +55,7 @@
         required
         filled
         rounded
-        dense
+        outlined
         label="8 + 10 =">
         </v-text-field>
       </v-container>
@@ -70,8 +71,8 @@
         </v-radio-group>
       </div>
       <v-card 
-      color="black"
-      class="d-flex justify-center">
+      color="white"
+      class="d-flex justify-center elevation-0">
       <v-btn
         x-large
         color="pink"
@@ -155,19 +156,15 @@ export default {
 }
 
 >>> .v-label {
-  font-size: 18px;
-  color: #FFB74D; 
+  font-size: 20px;
+   
 }
 >>>.v-input--radio-group legend.v-label {
   font-size: 18px;
-}
->>> .vue-country-select .dropdown-item {
-  background: black;
 }
 >>> .vue-country-select {
   margin-bottom: 20px;
   border-style: none;
 }
-
 </style>
 

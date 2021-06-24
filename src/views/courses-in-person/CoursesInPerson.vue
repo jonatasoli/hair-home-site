@@ -7,7 +7,7 @@
           <v-container class="cards">
             <v-col>
              <v-row>
-              <v-card class="mx-auto  card" width="274">
+              <v-card class="mx-auto  card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/corte-brasil.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">29 e 30/07</p>
@@ -16,7 +16,7 @@
                         </p>     
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto  card" width="274">
+               <v-card class="mx-auto  card" width="274" color="#D8BC98">
               <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/master-training-brasil.jpeg"></v-img>
                 
                   <v-card-text>
@@ -26,7 +26,7 @@
                         </p>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto  card" width="274">
+               <v-card class="mx-auto  card" width="274" color="#D8BC98">
                    <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/blond-extreme-brasil.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">23 e 24/08</p>
@@ -37,7 +37,7 @@
               </v-card>
               </v-row>
               <v-row class="mt-12">
-              <v-card class="mx-auto  card" width="274">
+              <v-card class="mx-auto  card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/forma%C3%A7%C3%A3o-tecnicos-brasil.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">29/08 e 03/09</p>
@@ -46,7 +46,7 @@
                         </p>
                   </v-card-text>
               </v-card>
-              <v-card class="mx-auto card" width="274">
+              <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/overdoser-color-brasil.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">20 a 23/09</p>
@@ -55,7 +55,7 @@
                         </p>
                   </v-card-text>
               </v-card>
-              <v-card class="mx-auto card" width="274">
+              <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/summertec-brasil.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">26/09 a 01/10</p>
@@ -67,7 +67,7 @@
               </v-row>
                <h2>Portugal</h2>
                <v-row>
-                  <v-card class="mx-auto card" width="274">
+                  <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/corte-portugal.jpeg"></v-img>    
                   <v-card-text>
                       <p class=" display-1 text--primary">27 a 28/06</p>
@@ -76,7 +76,7 @@
                         </p>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto card" width="274">
+               <v-card class="mx-auto card" width="274" color="#D8BC98">
                    <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/alisantes-portugal.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">29 e 30/06</p>
@@ -85,7 +85,7 @@
                         </p>
                   </v-card-text>
               </v-card>
-               <v-card class="mx-auto card" width="274">
+               <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/master-training-portugal.jpeg"></v-img> 
                   <v-card-text>
                       <p class=" display-1 text--primary">24-26/10</p>
@@ -96,7 +96,7 @@
               </v-card>
                </v-row>
               <v-row class="mt-12">
-                 <v-card class="mx-auto card" width="274">
+                 <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/blond-extreme-portugal.jpeg"></v-img>
                   <v-card-text>
                       <p class=" display-1 text--primary">27 e 28/10</p>
@@ -112,7 +112,7 @@
           <v-btn
           class="btn"
           x-large
-           color="orange lighten-2" text elevation="10"
+           color="#9C8E83"  elevation="10"
            href="https://hairschool.graciellegatto.com.br/whatsapp"
            target="_blank">
             Saiba mais sobre os nossos cursos</v-btn>
@@ -136,13 +136,13 @@ export default {
 h1 {
     text-align: center;
     margin: 40px 0;
-    color: #FFB74D;
+    color: #D99938;
     font-size: 36px;
 }
 h2 {
     text-align: center;
     margin: 40px 0;
-    color: #FFB74D;
+    color: #D99938;
     font-size: 28px;
 }
 

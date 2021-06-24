@@ -33,7 +33,7 @@
        </div>
     </v-container>
     <v-container class="cards">
-      <v-card class="mx-auto card" width="244">
+      <v-card class="mx-auto card" width="244" color="#9C8E83">
       <v-img
       class="img"
       src="./assets/alvo.png"
@@ -69,7 +69,7 @@
          </div>
         </v-expand-transition>
       </v-card>
-        <v-card class="mx-auto card" width="244">
+        <v-card class="mx-auto card" width="244" color="#9C8E83">
            <v-img class="img"
       src="./assets/visao.png"
       max-width="130"
@@ -95,7 +95,7 @@
          </div>
         </v-expand-transition>
       </v-card>
-        <v-card class="mx-auto card" width="244">
+        <v-card class="mx-auto card" width="244" color="#9C8E83">
            <v-img
       class="img"
       src="./assets/valor.png"
@@ -148,7 +148,7 @@ data() {
 <style  scoped>
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 h1 {
-    color: #FFB74D;
+    color: #D99938;
     font-family: 'Syne', sans-serif;
     text-align: center;
     margin: 20px 10px;
