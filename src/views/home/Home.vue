@@ -4,19 +4,25 @@
     <v-carousel
       class="carousel"
       cycle
-      height="400"
+      height="420"
       hide-delimiter-background
       interval="4000"
       show-arrows-on-hover
     >
       <v-carousel-item
-        ><v-img class="img" src="./assets/img1.jpg"></v-img
+        ><v-img class="img" height="420" src="./assets/1.png"></v-img
       ></v-carousel-item>
       <v-carousel-item
-        ><v-img class="img" src="./assets/img2.jpg"></v-img
+        ><v-img class="img" height="420" src="./assets/2.png"></v-img
       ></v-carousel-item>
       <v-carousel-item
-        ><v-img class="img" src="./assets/img3.jpg"></v-img
+        ><v-img class="img" height="420" src="./assets/3.png"></v-img
+      ></v-carousel-item>
+       <v-carousel-item
+        ><v-img class="img" height="420" src="./assets/4.png"></v-img
+      ></v-carousel-item>
+       <v-carousel-item
+        ><v-img class="img" height="420" src="./assets/5.png"></v-img
       ></v-carousel-item>
     </v-carousel>
     <h1>Conheça a Maior e Melhor Academia Científica de Beleza do Mundo</h1>
@@ -66,7 +72,7 @@
         </v-card-actions>
       </v-card>
     </v-container>
-    <v-img class="img-gatto-rosa" src="./assets/01-Banner.jpg">
+    <v-img class="img-gatto-rosa" src="./assets/6.png">
       
       <v-btn
         class="title-gatto-rosa"
@@ -74,8 +80,7 @@
         href="https://loja.gattorosa.com.br/"
         target="_blank"
       >
-        Conheça a nossa Loja!
-        <v-icon x-large>mdi-arrow-right-bold-outline</v-icon>
+        <v-icon size="150" class="icon">mdi-arrow-right-bold-outline</v-icon>
 </v-btn>
       
       </v-img>
@@ -92,6 +97,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 h1 {
   text-align: center;
   margin: 40px 0;
@@ -108,17 +115,10 @@ h1 {
   margin: 20px;
 }
 .title-gatto-rosa {
-  word-wrap: break-word;
-  font-size: 40px;
   color: #D99938;
   position: relative;
-  top: 60%;
-  left: 52%;
-}
-
-.img-gatto-rosa {
-  height: 600px;
-  object-fit: contain;
+  top: 30%;
+  left: 87%;
 }
 
 >>> .img-gatto-rosa .v-image__image {
@@ -134,12 +134,12 @@ h1 {
   }
   .carousel {
     margin-top: -150px;
+    height: 280px !important;
   }
   .img {
-    width: 600px;
-    height: 200px;
-    margin-top: 150px;
+    height: 430px !important;
   }
+  
 
   >>>.v-btn__content {
     width: 180px;
@@ -148,14 +148,18 @@ h1 {
     
   }
   .title-gatto-rosa {
-    font-size: 25px;
-    color: #ffb74d;
-    top: 50%;
-    left: 45%;
+    top: 20%;
+    left: 65%;
+  }
+  .icon {
+    font-size: 40px !important;
   }
 
   >>> .img-gatto-rosa .v-image__image {
-    background-size: 100% 400px;
+    background-size: 100% 150px;
+  }
+  >>> .carousel .v-image__image {
+    background-size: 100% 130px;
   }
 }
 </style>
