@@ -17,12 +17,10 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  background: black;
-}
+
 .titles {
   text-align: center;
-  color: #FFB74D;
+  color: #D99938;
 }
 
 </style>

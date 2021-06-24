@@ -1,6 +1,6 @@
 <template>
   <div >
-    <v-app-bar class="navbar"  app elevation="1" color="#18121E" height="80">
+    <v-app-bar class="navbar"  app elevation="1" color="black" height="80">
       <v-img
         src="@/assets/logo.png"
         class="mx-3 hidden-xs-only"
@@ -28,7 +28,7 @@
         </v-menu>
 
       <v-toolbar-items class="toolbar" v-for="(item, index) in itens" :key="index" v-else>
-        <v-btn color="#18121E" elevation="0" @click="item.to">{{item.title}}</v-btn>
+        <v-btn color="white" text elevation="0" @click="item.to">{{item.title}}</v-btn>
         
       </v-toolbar-items>
     </v-app-bar>

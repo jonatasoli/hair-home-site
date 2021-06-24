@@ -26,7 +26,7 @@ export default {
 h1 {
     text-align: center;
     margin: 40px 0;
-    color: #FFB74D;
+    color: #D99938;
     font-size: 36px;
 }
 .videos {

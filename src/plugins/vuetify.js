@@ -6,12 +6,12 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
-    dark: {
-      background: "#18121E",
-      secondary: "#984B43",
-      primary: "#EAC67A",
-      info: "#233237"
-    }
+      light : {
+        background: "#FFFFFF",
+        secondary: "#D8BC98",
+        primary: "#D8BC98",
+        info: "#D8BC98"
+      }
   },
   icons: {
     iconfont: "fa"

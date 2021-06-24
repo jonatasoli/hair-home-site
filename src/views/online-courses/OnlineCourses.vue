@@ -5,14 +5,13 @@
       <v-container class="cards">
           <v-card
           class="mx-auto card"
-          max-width="344">
+          max-width="344" color="#D8BC98">
               <v-img
               src="./assets/penteados-trancas.jpg"
               height="300">
               </v-img>
             <v-card-actions>
                 <v-btn
-                color="orange lighten-2"
                 text
                 href="https://pay.hotmart.com/I10613380T?checkoutMode=10&bid=1612533603475"
                 target="_blank"
@@ -23,14 +22,13 @@
         </v-card>
         <v-card
           class="mx-auto card"
-          max-width="344">
+          max-width="344" color="#D8BC98">
               <v-img
               src="./assets/colorimetria-capilar.jpg"
               height="300">
               </v-img>
             <v-card-actions>
                 <v-btn
-                color="orange lighten-2"
                 text
                 href="https://pay.hotmart.com/X22589927C?checkoutMode=10&bid=1612534456453"
                 target="_blank"
@@ -41,14 +39,13 @@
         </v-card>
         <v-card
           class="mx-auto card"
-          max-width="344">
+          max-width="344" color="#D8BC98">
               <v-img
               src="./assets/desing-sobrancelhas.jpg"
               height="300">
               </v-img>
             <v-card-actions>
                 <v-btn
-                color="orange lighten-2"
                 text
                 href="https://pay.hotmart.com/T18435426G?checkoutMode=10&bid=1612534480505"
                 target="_blank"
@@ -74,7 +71,7 @@ export default {
 h1 {
     text-align: center;
     margin: 40px 0;
-    color: #FFB74D;
+    color: #D99938;
     font-size: 36px;
 }
 .cards {

@@ -141,7 +141,7 @@ export default {
 h1 {
   text-align: center;
   margin: 40px 0;
-  color: #ffb74d;
+  color: #D99938;
   font-size: 36px;
 }
 .item {
