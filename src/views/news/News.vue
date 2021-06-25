@@ -19,9 +19,16 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
+   <carousel-3d :width="600" :height="320" :controlsVisible="true">
+    <slide v-for="(slide, i) in images" :index="i" :key="i">
+        <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
+            <img :data-index="index" :class="{ current: isCurrent, onLeft: (leftIndex >= 0), onRight: (rightIndex >= 0) }" :src="getImgUrl(slide.src)">
+        </template>
+    </slide>
+</carousel-3d>
 
     <v-carousel
-      class="carousel"
+      class="carousel mt-12"
       cycle
       continuous
       interval="4000"
@@ -49,8 +56,9 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
+import { Carousel3d, Slide } from 'vue-carousel-3d';
 export default {
-  components: { NavBar, Footer },
+  components: { NavBar, Footer, Carousel3d, Slide },
   data() {
     return {
       colors: ["#D99938", "#9C8E83","#D99938","#9C8E83" ],
@@ -76,7 +84,24 @@ export default {
           aluno: "Beatriz Maia, Aluna",
         },
       ],
+      images: [
+        {src: "1.jpg"},
+        {src: "2.jpg"},
+        {src: "3.jpg"},
+        {src: "4.jpg"},
+        {src: "5.jpg"},
+        {src: "6.jpg"},
+        {src: "7.jpg"},
+        {src: "8.jpg"},
+        {src: "9.jpg"},
+        {src: "10.jpg"},
+      ]
     };
+  },
+  methods: {
+    getImgUrl(pic) {
+        return require('./assets/'+ pic)
+      }
   },
   computed: {
     videos() {
@@ -117,19 +142,6 @@ export default {
       ];
     },
   },
-  methods: {
-    onClick({ ref }) {
-      // Loop over all videos
-      this.videos.forEach((video) => {
-        // Get the DOM element for this video
-        const $video = this.$refs[video.ref][0];
-        // Play the video that the user clicked
-        if (video.ref === ref) $video.play();
-        // Pause all other videos
-        else $video.pause();
-      });
-    },
-  },
 };
 </script>
 
@@ -143,7 +155,7 @@ h1 {
 }
 .item {
   font-size: 20px;
-  width: 900px;
+  width: 100%;
   text-align: center;
   color: black;
 }
