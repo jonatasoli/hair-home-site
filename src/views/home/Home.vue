@@ -93,10 +93,19 @@
         ></v-carousel-item>
       </v-carousel>
     </div>
+      <v-banner color="#D99938" height="180" width="100%" class="mt-2 banner">
+      <div class="d-flex justify-center">
+      <v-img src="./assets/banner/5.png" class="mx-6 img-banner" height="150" max-width="150"></v-img>
+      <v-img src="./assets/banner/6.png" class="mx-6 img-banner" height="150" max-width="150"></v-img>
+      <v-img src="./assets/banner/7.png" class="mx-6 img-banner" height="150" max-width="150"></v-img>
+      <v-img src="./assets/banner/8.png" class="mx-6 img-banner" height="150" max-width="150"></v-img>
+      <v-img src="./assets/banner/9.png" class="mx-6 img-banner" height="150" max-width="150"></v-img>
+      </div>
+    </v-banner>
     <h1>Conheça a Maior e Melhor Academia Científica de Beleza do Mundo</h1>
     <v-container class="history-hair-school mx-7" fluid>
       <div>
-      <v-img src="./assets/imagem-historia.jpeg" width="500"></v-img>
+      <v-img class="img-history" src="./assets/imagem-historia.jpeg" width="500"></v-img>
 
       </div>
       <div class="history-text">
@@ -114,6 +123,15 @@
     </v-container>
     <v-container>
       <v-img src="./assets/mapa.jpeg" width="600" class="mx-auto"></v-img>
+    </v-container>
+    <v-container fluid>
+      <h1>Nossos Instrutores</h1>
+      <div class="d-flex justify-center flex-wrap">
+        <v-img src="./assets/instrutores/4.png" max-width="300"></v-img>
+        <v-img src="./assets/instrutores/1.png" max-width="300"></v-img>
+        <v-img src="./assets/instrutores/2.png" max-width="300"></v-img>
+        <v-img src="./assets/instrutores/3.png" max-width="300"></v-img>
+      </div>
     </v-container>
     <v-container class="cards" fluid>
       <v-card class="mx-auto card" max-width="344" color="#D8BC98" v-for="(image, i) in images" :key="i">
@@ -198,22 +216,40 @@ h1 {
   margin: 20px;
 }
 .title-gatto-rosa {
-  color: #d99938;
+  color: #D99938;
   position: relative;
   top: 35%;
   left: 87%;
 }
 
 @media only screen and (max-width: 600px) {
+  .carousel {
+    margin-top: -150px;
+    height: 280px !important;
+  }
+  .banner {
+
+    height: 100px !important;
+  }
+  .img-banner {
+    margin: 0 !important;
+    max-width: 70px !important;
+    height: 70px !important;
+  }
+  .history-hair-school {
+    width: 90%
+  }
+  .img-history {
+    width: 300px !important;
+  }
+  .history-text {
+    width: 90%
+  }
   .cards {
     display: block;
   }
   .card {
     margin-bottom: 30px;
-  }
-  .carousel {
-    margin-top: -150px;
-    height: 280px !important;
   }
   .img {
     height: 430px !important;

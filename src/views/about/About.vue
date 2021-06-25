@@ -166,6 +166,7 @@ h1 {
 .biografy {
   width: 55%
 }
+
 .biografy p {
     font-size: 25px;
     text-align: justify;
