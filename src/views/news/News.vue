@@ -2,6 +2,13 @@
   <v-app>
     <NavBar />
     <v-container>
+   <carousel-3d :width="600" :height="320" :border="0" :controlsVisible="true">
+    <slide v-for="(slide, i) in images" :index="i" :key="i">
+        <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
+            <img :data-index="index" :class="{ current: isCurrent, onLeft: (leftIndex >= 0), onRight: (rightIndex >= 0) }" :src="getImgUrl(slide.src)">
+        </template>
+    </slide>
+</carousel-3d>
       <h1>O QUE DIZEM SOBRE NÓS</h1>
     </v-container>
     <v-carousel class="carousel" height="440">
@@ -19,16 +26,9 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
-   <carousel-3d :width="600" :height="320" :controlsVisible="true">
-    <slide v-for="(slide, i) in images" :index="i" :key="i">
-        <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
-            <img :data-index="index" :class="{ current: isCurrent, onLeft: (leftIndex >= 0), onRight: (rightIndex >= 0) }" :src="getImgUrl(slide.src)">
-        </template>
-    </slide>
-</carousel-3d>
 
     <v-carousel
-      class="carousel mt-12"
+      class="carousel "
       cycle
       continuous
       interval="4000"
