@@ -119,7 +119,7 @@
           class="btn"
           x-large
            color="#9C8E83"  elevation="10"
-           href="https://hairschool.graciellegatto.com.br/whatsapp"
+           href="https://api.whatsapp.com/send?phone=5511993860382&text=Mais%20informa%C3%A7%C3%B5es%20sobre%20a%20HAIR%20SCHOOL"
            target="_blank">
             Saiba mais sobre os nossos cursos</v-btn>
         
@@ -176,6 +176,11 @@ h2 {
   }
   .card {
     margin-bottom: 30px;
+  }
+  >>> .btn span{
+    width: 220px;
+    word-break: break-word;
+    white-space: normal;
   }
 }
 </style>
