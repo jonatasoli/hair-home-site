@@ -73,24 +73,6 @@
               </v-row>
                <h2>Portugal</h2>
                <v-row>
-                  <v-card class="mx-auto card" width="274" color="#D8BC98">
-                  <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/corte-portugal.jpeg"></v-img>    
-                  <v-card-text>
-                      <p class=" display-1 text--primary">27 a 28/06</p>
-                        <p class="display-1 text--primary">
-                            Corte de A-Z
-                        </p>
-                  </v-card-text>
-              </v-card>
-               <v-card class="mx-auto card" width="274" color="#D8BC98">
-                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/alisantes-portugal.jpeg"></v-img>
-                  <v-card-text>
-                      <p class=" display-1 text--primary">29 e 30/06</p>
-                        <p class="display-1 text--primary">
-                            Lisos e Ondulantes
-                        </p>
-                  </v-card-text>
-              </v-card>
                <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/master-training-portugal.jpeg"></v-img> 
                   <v-card-text>
@@ -100,8 +82,6 @@
                         </p>
                   </v-card-text>
               </v-card>
-               </v-row>
-              <v-row class="mt-12">
                  <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/blond-extreme-portugal.jpeg"></v-img>
                   <v-card-text>
@@ -111,7 +91,9 @@
                         </p>
                   </v-card-text>
               </v-card>
-              </v-row>
+               </v-row>
+              
+              
               </v-col>
           </v-container>
           <v-container class="v-btn">
