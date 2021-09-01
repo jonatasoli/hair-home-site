@@ -6,52 +6,7 @@
           <h2>Brasil</h2>
           <v-container class="cards">
             <v-col>
-             <v-row>
-              <v-card class="mx-auto  card" width="274" color="#D8BC98">
-                  <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/corte-brasil.jpeg"></v-img>
-                  <v-card-text>
-                      <p class=" display-1 text--primary">29 e 30/07</p>
-                        <p class="display-1 text--primary">
-                            Corte de A-Z
-                        </p>     
-                  </v-card-text>
-              </v-card>
-               <v-card class="mx-auto  card" width="274" color="#D8BC98">
-              <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/master-training-brasil.jpeg"></v-img>
-                
-                  <v-card-text>
-                      <p class=" display-1 text--primary">01-02 e 03/08</p>
-                        <p class="display-1 text--primary">
-                            Master Training
-                        </p>
-                        <p class="sold-out">
-                            VAGAS ESGOTADAS
-                        </p>
-                  </v-card-text>
-              </v-card>
-               <v-card class="mx-auto  card" width="274" color="#D8BC98">
-                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/blond-extreme-brasil.jpeg"></v-img>
-                  <v-card-text>
-                      <p class=" display-1 text--primary">23 e 24/08</p>
-                        <p class="display-1 text--primary">
-                            Blond Extreme
-                        </p>
-                  </v-card-text>
-              </v-card>
-              </v-row>
               <v-row class="mt-12">
-              <v-card class="mx-auto  card" width="274" color="#D8BC98">
-                  <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/forma%C3%A7%C3%A3o-tecnicos-brasil.jpeg"></v-img>
-                  <v-card-text>
-                      <p class=" display-1 text--primary">29/08 e 03/09</p>
-                        <p class="display-1 text--primary">
-                            Formação de Técnicos
-                        </p>
-                        <p class="sold-out">
-                            VAGAS ESGOTADAS
-                        </p>
-                  </v-card-text>
-              </v-card>
               <v-card class="mx-auto card" width="274" color="#D8BC98">
                   <v-img src="https://gattorosa.nyc3.digitaloceanspaces.com/overdoser-color-brasil.jpeg"></v-img>
                   <v-card-text>
